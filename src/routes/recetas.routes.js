@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { borrarReceta, agregarReceta, editarReceta, listarRecetas, obtenerReceta } from "../controllers/productos.controllers";
+import { borrarReceta, agregarReceta, editarReceta, listarRecetas, obtenerReceta } from "../controllers/recetas.controllers";
 import { check } from "express-validator";
 const router = Router();
 router
@@ -79,3 +79,4 @@ router
         editarReceta
     )
     .delete(borrarReceta);
+export default router;
